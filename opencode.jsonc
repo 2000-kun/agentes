@@ -1,0 +1,89 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "arquitecto-codigo": {
+      "description": "Agente de Ingeniería de Software Universal. Transforma cualquier boceto, diagrama o requerimiento visual en código de nivel producción.",
+      "mode": "subagent",
+      "model": "opencode/mimo-v2.5-free",
+      "temperature": 0.2
+    },
+    "orquestador": {
+      "description": "Coordinador de proyectos. Recibe un plan completo, lo descompone en tareas y delega cada una al agente correcto.",
+      "mode": "all",
+      "model": "opencode/mimo-v2.5-free",
+      "temperature": 0.2
+    },
+    "devops-backend": {
+      "description": "Especialista en backend, APIs, infraestructura y CI/CD. Diseña servidores, contenedores y pipelines de despliegue.",
+      "mode": "subagent",
+      "model": "opencode/mimo-v2.5-free",
+      "temperature": 0.2
+    },
+    "qa-testing": {
+      "description": "Especialista en testing y QA. Genera tests unitarios, de integración, E2E y revisa cobertura de código.",
+      "mode": "subagent",
+      "model": "opencode/mimo-v2.5-free",
+      "temperature": 0.1
+    },
+    "seguridad-app": {
+      "description": "Auditor de seguridad de aplicaciones. Detecta vulnerabilidades, inyecciones, secrets expuestos y riesgos en código.",
+      "mode": "subagent",
+      "model": "opencode/mimo-v2.5-free",
+      "temperature": 0.1
+    },
+    "revisor-ui": {
+      "description": "Auditor y desarrollador frontend. Compara diseños, corrige estilos e implementa maquetaciones visuales.",
+      "mode": "subagent",
+      "model": "opencode/mimo-v2.5-free",
+      "temperature": 0.1
+    },
+    "base-datos-dba": {
+      "description": "DBA y arquitecto de bases de datos. Optimiza queries, diseña esquemas, migra datos y resuelve problemas de rendimiento.",
+      "mode": "subagent",
+      "model": "opencode/mimo-v2.5-free",
+      "temperature": 0.1
+    },
+    "digitalizador": {
+      "description": "Especialista en OCR y procesamiento de datos. Transforma imágenes de documentos y tablas en formatos estructurados.",
+      "mode": "subagent",
+      "model": "opencode/mimo-v2.5-free",
+      "temperature": 0.0
+    },
+    "auditor-financiero": {
+      "description": "Analista financiero y de negocios. Evalúa estados de cuenta, balances, hojas de cálculo y reportes métricos.",
+      "mode": "subagent",
+      "model": "opencode/mimo-v2.5-free",
+      "temperature": 0.2
+    },
+    "redactor-multimodal": {
+      "description": "Copywriter y creador de contenido visual. Redacta textos persuasivos y contenido digital analizando tus imágenes o productos.",
+      "mode": "subagent",
+      "model": "opencode/mimo-v2.5-free",
+      "temperature": 0.7
+    },
+    "documentador": {
+      "description": "Escritor técnico. Genera archivos README, guías de usuario y documentación de sistemas analizando tu proyecto e imágenes.",
+      "mode": "subagent",
+      "model": "opencode/mimo-v2.5-free",
+      "temperature": 0.1
+    },
+    "estudiante-visual": {
+      "description": "Tutor académico multimodal. Transforma diagramas, apuntes a mano y capturas en guías de estudio interactivas.",
+      "mode": "subagent",
+      "model": "opencode/mimo-v2.5-free",
+      "temperature": 0.3
+    },
+    "desarrollador-movil": {
+      "description": "Especialista en desarrollo móvil. Crea apps con React Native, Flutter, Swift y Kotlin, optimizadas para iOS y Android.",
+      "mode": "subagent",
+      "model": "opencode/mimo-v2.5-free",
+      "temperature": 0.2
+    },
+    "visionario": {
+      "description": "Agente multimodal capaz de procesar imágenes, vídeos, documentos y código.",
+      "mode": "all",
+      "model": "opencode/mimo-v2.5-free",
+      "temperature": 0.1
+    }
+  }
+}
