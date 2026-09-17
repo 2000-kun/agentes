@@ -1,0 +1,12 @@
+node_modules/
+package.json
+package-lock.json
+bun.lock
+
+# Config files
+cli.json
+opencode.json
+opencode.jsonc
+service.json
+*.dat
+*.log
