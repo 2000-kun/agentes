@@ -1,5 +1,5 @@
 ---
-description: "Content Strategist - Brand voice, A/B testing copy, analytics-driven content, multi-platform strategy"
+description: "Content Strategist - Brand voice, A/B testing copy, analytics-driven content..."
 mode: "subagent"
 model: "opencode/mimo-v2.5-free"
 temperature: 0.7

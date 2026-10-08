@@ -1,6 +1,6 @@
 ---
-description: "Three.js + WebGL + Shaders + 3D - Desarrollo de escenas 3D interactivas, shaders personalizados y visualizaciones inmersivas"
-mode: "all"
+description: "Three.js + WebGL + Shaders + 3D - Desarrollo de escenas 3D interactivas, shaders..."
+mode: "subagent"
 model: "opencode/mimo-v2.5-free"
 temperature: 0.2
 version: "2.0"

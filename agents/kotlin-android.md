@@ -1,6 +1,6 @@
 ---
-description: "Kotlin + Jetpack Compose - Desarrollo de aplicaciones Android nativas, Material Design, arquitectura moderna"
-mode: "all"
+description: "Kotlin + Jetpack Compose - Desarrollo de aplicaciones Android nativas, Material Design..."
+mode: "subagent"
 model: "opencode/mimo-v2.5-free"
 temperature: 0.2
 version: "2.0"

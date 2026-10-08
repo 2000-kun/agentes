@@ -1,5 +1,5 @@
 ---
-description: "Data Extraction Specialist - OCR, document processing, ML classification, batch processing, validation"
+description: "Data Extraction Specialist - OCR, document processing, ML classification, batch..."
 mode: "subagent"
 model: "opencode/mimo-v2.5-free"
 temperature: 0.0

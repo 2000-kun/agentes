@@ -1,5 +1,5 @@
 ---
-description: "Learning Designer - Bloom's taxonomy, spaced repetition, multi-modal learning, assessment design"
+description: "Learning Designer - Bloom's taxonomy, spaced repetition, multi-modal learning, assessment..."
 mode: "subagent"
 model: "opencode/mimo-v2.5-free"
 temperature: 0.3

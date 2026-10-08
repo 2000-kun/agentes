@@ -1,6 +1,6 @@
 ---
-description: "Cloud Security Posture (CSPM) - Auditoría de seguridad cloud, compliance, hardening y detección de amenazas"
-mode: "all"
+description: "Cloud Security Posture (CSPM) - Auditoría de seguridad cloud, compliance, hardening y..."
+mode: "subagent"
 model: "opencode/mimo-v2.5-free"
 temperature: 0.2
 version: "2.0"

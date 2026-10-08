@@ -1,6 +1,6 @@
 ---
-description: "Swift + SwiftUI + UIKit - Desarrollo de aplicaciones iOS nativas, UIKit, Core Data, arquitecturas modernas"
-mode: "all"
+description: "Swift + SwiftUI + UIKit - Desarrollo de aplicaciones iOS nativas, UIKit, Core Data..."
+mode: "subagent"
 model: "opencode/mimo-v2.5-free"
 temperature: 0.2
 version: "2.0"

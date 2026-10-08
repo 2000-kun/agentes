@@ -1,6 +1,6 @@
 ---
-description: "GitLab CI/CD + Docker - Pipelines, auto-deploy, runners, containerization y DevOps en GitLab"
-mode: "all"
+description: "GitLab CI/CD + Docker - Pipelines, auto-deploy, runners, containerization y DevOps en..."
+mode: "subagent"
 model: "opencode/mimo-v2.5-free"
 temperature: 0.2
 version: "2.0"

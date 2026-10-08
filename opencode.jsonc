@@ -1,87 +1,122 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "agent": {
+  "tool_output": {
+    "max_lines": 2000,
+    "max_bytes": 65536
+  },
+  "media": {
+    "image": {
+      "auto_resize": true,
+      "max_width": 1280,
+      "max_height": 1280,
+      "max_base64_bytes": 2097152
+    }
+  },
+  "permissions": [
+    {
+      "action": "bash",
+      "resource": "*Stop-Process*node*",
+      "effect": "deny"
+    },
+    {
+      "action": "bash",
+      "resource": "*taskkill*/F*/IM*node*",
+      "effect": "deny"
+    },
+    {
+      "action": "bash",
+      "resource": "*Get-Process*-Name*node*Stop-Process*",
+      "effect": "deny"
+    }
+  ],
+  "agents": {
     "arquitecto-codigo": {
-      "description": "Agente de Ingeniería de Software Universal. Transforma cualquier boceto, diagrama o requerimiento visual en código de nivel producción.",
+      "description": "Agente de Ingeniería de Software Universal. Transforma cualquier boceto, diagrama o",
       "mode": "subagent",
       "model": "opencode/mimo-v2.5-free",
       "temperature": 0.2
     },
     "orquestador": {
-      "description": "Coordinador de proyectos. Recibe un plan completo, lo descompone en tareas y delega cada una al agente correcto.",
-      "mode": "all",
+      "description": "Coordinador de proyectos. Recibe un plan completo, lo descompone en tareas y delega cada",
+      "mode": "primary",
       "model": "opencode/mimo-v2.5-free",
       "temperature": 0.2
     },
     "devops-backend": {
-      "description": "Especialista en backend, APIs, infraestructura y CI/CD. Diseña servidores, contenedores y pipelines de despliegue.",
+      "description": "Especialista en backend, APIs, infraestructura y CI/CD. Diseña servidores, contenedores y",
       "mode": "subagent",
       "model": "opencode/mimo-v2.5-free",
       "temperature": 0.2
     },
     "qa-testing": {
-      "description": "Especialista en testing y QA. Genera tests unitarios, de integración, E2E y revisa cobertura de código.",
+      "description": "Especialista en testing y QA. Genera tests unitarios, de integración, E2E y revisa",
       "mode": "subagent",
       "model": "opencode/mimo-v2.5-free",
       "temperature": 0.1
     },
     "seguridad-app": {
-      "description": "Auditor de seguridad de aplicaciones. Detecta vulnerabilidades, inyecciones, secrets expuestos y riesgos en código.",
+      "description": "Auditor de seguridad de aplicaciones. Detecta vulnerabilidades, inyecciones, secrets",
       "mode": "subagent",
       "model": "opencode/mimo-v2.5-free",
       "temperature": 0.1
     },
     "revisor-ui": {
-      "description": "Auditor y desarrollador frontend. Compara diseños, corrige estilos e implementa maquetaciones visuales.",
+      "description": "Auditor y desarrollador frontend. Compara diseños, corrige estilos e implementa",
       "mode": "subagent",
       "model": "opencode/mimo-v2.5-free",
       "temperature": 0.1
     },
     "base-datos-dba": {
-      "description": "DBA y arquitecto de bases de datos. Optimiza queries, diseña esquemas, migra datos y resuelve problemas de rendimiento.",
+      "description": "DBA y arquitecto de bases de datos. Optimiza queries, diseña esquemas, migra datos y",
       "mode": "subagent",
       "model": "opencode/mimo-v2.5-free",
       "temperature": 0.1
     },
     "digitalizador": {
-      "description": "Especialista en OCR y procesamiento de datos. Transforma imágenes de documentos y tablas en formatos estructurados.",
+      "description": "Especialista en OCR y procesamiento de datos. Transforma imágenes de documentos y tablas",
       "mode": "subagent",
       "model": "opencode/mimo-v2.5-free",
       "temperature": 0.0
     },
     "auditor-financiero": {
-      "description": "Analista financiero y de negocios. Evalúa estados de cuenta, balances, hojas de cálculo y reportes métricos.",
+      "description": "Analista financiero y de negocios. Evalúa estados de cuenta, balances, hojas de cálculo y",
       "mode": "subagent",
       "model": "opencode/mimo-v2.5-free",
       "temperature": 0.2
     },
     "redactor-multimodal": {
-      "description": "Copywriter y creador de contenido visual. Redacta textos persuasivos y contenido digital analizando tus imágenes o productos.",
+      "description": "Copywriter y creador de contenido visual. Redacta textos persuasivos y contenido digital",
       "mode": "subagent",
       "model": "opencode/mimo-v2.5-free",
       "temperature": 0.7
     },
     "documentador": {
-      "description": "Escritor técnico. Genera archivos README, guías de usuario y documentación de sistemas analizando tu proyecto e imágenes.",
+      "description": "Escritor técnico. Genera archivos README, guías de usuario y documentación de sistemas",
       "mode": "subagent",
       "model": "opencode/mimo-v2.5-free",
       "temperature": 0.1
     },
     "estudiante-visual": {
-      "description": "Tutor académico multimodal. Transforma diagramas, apuntes a mano y capturas en guías de estudio interactivas.",
+      "description": "Tutor académico multimodal. Transforma diagramas, apuntes a mano y capturas en guías de",
       "mode": "subagent",
       "model": "opencode/mimo-v2.5-free",
       "temperature": 0.3
     },
     "desarrollador-movil": {
-      "description": "Especialista en desarrollo móvil. Crea apps con React Native, Flutter, Swift y Kotlin, optimizadas para iOS y Android.",
+      "description": "Especialista en desarrollo móvil. Crea apps con React Native, Flutter, Swift y Kotlin",
       "mode": "subagent",
       "model": "opencode/mimo-v2.5-free",
       "temperature": 0.2
     },
     "visionario": {
       "description": "Agente multimodal capaz de procesar imágenes, vídeos, documentos y código.",
-      "mode": "all",
+      "mode": "subagent",
+      "model": "opencode/mimo-v2.5-free",
+      "temperature": 0.1
+    },
+    "office-reader": {
+      "description": "Especialista en lectura de documentos Office y PDF v2.0. Lee archivos con múltiples",
+      "mode": "subagent",
       "model": "opencode/mimo-v2.5-free",
       "temperature": 0.1
     }

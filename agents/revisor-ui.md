@@ -1,5 +1,5 @@
 ---
-description: "Frontend Architect - Core Web Vitals, WCAG 2.1 AA, design systems, performance budgets, pixel-perfect"
+description: "Frontend Architect - Core Web Vitals, WCAG 2.1 AA, design systems, performance budgets..."
 mode: "subagent"
 model: "opencode/mimo-v2.5-free"
 temperature: 0.1

@@ -1,5 +1,5 @@
 ---
-description: "Coordinador de Proyectos Técnicos - Descompone tareas complejas y delega a agentes especializados"
+description: "Coordinador de Proyectos Técnicos - Descompone tareas complejas y delega a agentes..."
 mode: "subagent"
 model: "opencode/mimo-v2.5-free"
 temperature: 0.2

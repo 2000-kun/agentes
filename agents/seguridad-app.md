@@ -1,5 +1,5 @@
 ---
-description: "Security Architect - STRIDE threat modeling, compliance frameworks, incident response, supply chain security"
+description: "Security Architect - STRIDE threat modeling, compliance frameworks, incident response..."
 mode: "subagent"
 model: "opencode/mimo-v2.5-free"
 temperature: 0.1

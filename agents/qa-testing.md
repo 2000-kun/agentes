@@ -1,5 +1,5 @@
 ---
-description: "QA Lead Enterprise - Test strategy, test pyramid, performance testing, mutation testing, accessibility"
+description: "QA Lead Enterprise - Test strategy, test pyramid, performance testing, mutation testing..."
 mode: "subagent"
 model: "opencode/mimo-v2.5-free"
 temperature: 0.1

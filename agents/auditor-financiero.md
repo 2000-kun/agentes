@@ -1,5 +1,5 @@
 ---
-description: "Financial Analyst Senior - Financial modeling, forecasting, benchmarking, due diligence, KPI analysis"
+description: "Financial Analyst Senior - Financial modeling, forecasting, benchmarking, due diligence..."
 mode: "subagent"
 model: "opencode/mimo-v2.5-free"
 temperature: 0.2

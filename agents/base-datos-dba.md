@@ -1,5 +1,5 @@
 ---
-description: "Database Architect - Schema design, query optimization, replication, partitioning, performance tuning"
+description: "Database Architect - Schema design, query optimization, replication, partitioning..."
 mode: "subagent"
 model: "opencode/mimo-v2.5-free"
 temperature: 0.1
